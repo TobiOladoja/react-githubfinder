@@ -2,13 +2,18 @@ import React from 'react';
 
 const Finder = props => {
   const { name, login, bio, location, avatar } = props;
+
   return (
     <div>
-      <p>{name}</p>
-      <p>{login}</p>
-      <p>{bio}</p>
-      <p>{location}</p>
-      <p>{avatar}</p>
+      {name && <p>Name: {name}</p>}
+      {login && <p>Username: {login}</p>}
+      {bio && <p>Bio: {bio}</p>}
+      {location && <p>Location: {location}</p>}
+      {avatar && (
+        <p>
+          <img src={avatar} alt='Avatar' />
+        </p>
+      )}
     </div>
   );
 };

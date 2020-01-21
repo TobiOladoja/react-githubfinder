@@ -1,9 +1,16 @@
 import React from 'react';
 
-export default function Finder() {
+const Finder = props => {
+  const { name, login, bio, location, avatar } = props;
   return (
     <div>
-      <h1>Finder</h1>
+      <p>{name}</p>
+      <p>{login}</p>
+      <p>{bio}</p>
+      <p>{location}</p>
+      <p>{avatar}</p>
     </div>
   );
-}
+};
+
+export default Finder;

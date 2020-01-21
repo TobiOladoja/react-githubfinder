@@ -1,9 +1,15 @@
 import React from 'react';
 
-export default function Form() {
+const Form = props => {
+  const { githubFinder } = props;
   return (
     <div>
-      <h1>Form</h1>
+      <form onSubmit={githubFinder}>
+        <input type='text' name='userInput' placeholder='Username...' />
+        <button>Search</button>
+      </form>
     </div>
   );
-}
+};
+
+export default Form;

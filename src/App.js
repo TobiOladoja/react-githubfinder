@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import Finder from './components/Finder';
 import Form from './components/Form';
 import Header from './components/Header';
